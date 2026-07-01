@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Plus, Check, X as XIcon } from "lucide-react";
-import { DailyReview as DailyReviewType, Workspace } from "../types";
+import { DailyReview as DailyReviewType, Workspace } from "./types";
 
 interface DailyReviewProps {
   workspace: Workspace;

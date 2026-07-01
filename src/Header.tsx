@@ -1,5 +1,5 @@
 import { Eye, EyeOff, Moon, Sun, ArrowLeft } from "lucide-react";
-import { Workspace } from "../types";
+import { Workspace } from "./types";
 
 interface HeaderProps {
   theme: "dark" | "light";

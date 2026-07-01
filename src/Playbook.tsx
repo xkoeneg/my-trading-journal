@@ -1,4 +1,4 @@
-import { PlaybookDoc, Workspace } from "../types";
+import { PlaybookDoc, Workspace } from "./types";
 
 interface PlaybookProps {
   workspace: Workspace;

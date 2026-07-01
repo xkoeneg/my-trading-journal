@@ -1,4 +1,4 @@
-import { Direction, Trade } from "../types";
+import { Direction, Trade } from "./types";
 
 export interface TradeMathInput {
   usdRisk: number;

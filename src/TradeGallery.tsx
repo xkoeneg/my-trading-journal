@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Plus, Search } from "lucide-react";
-import { Trade, Workspace } from "../types";
+import { Trade, Workspace } from "./types";
 import TradeCard from "./TradeCard";
 import TradeForm from "./TradeForm";
 

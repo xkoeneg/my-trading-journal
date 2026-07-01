@@ -6,7 +6,7 @@ import {
   Library,
   ClipboardCheck,
 } from "lucide-react";
-import { View } from "../types";
+import { View } from "./types";
 
 interface SidebarProps {
   view: View;

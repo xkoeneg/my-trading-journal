@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Sun, Moon as MoonIcon, ArrowRight } from "lucide-react";
-import { Trade, Workspace } from "../types";
-import { computeWorkspaceStats, formatUSD } from "../lib/math";
+import { Trade, Workspace } from "./types";
+import { computeWorkspaceStats, formatUSD } from "./math";
 
 interface WorkspaceHubProps {
   trades: Trade[];

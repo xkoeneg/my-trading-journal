@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Trade } from "../types";
-import { formatUSD } from "../lib/math";
+import { Trade } from "./types";
+import { formatUSD } from "./math";
 
 interface CalendarViewProps {
   trades: Trade[];

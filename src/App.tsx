@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import WorkspaceHub from "./components/WorkspaceHub";
-import Dashboard from "./components/Dashboard";
-import TradeGallery from "./components/TradeGallery";
-import CalendarView from "./components/CalendarView";
-import Playbook from "./components/Playbook";
-import DailyReview from "./components/DailyReview";
-import Wiki from "./components/Wiki";
-import TradeForm from "./components/TradeForm";
-import { usePersistentState } from "./lib/storage";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import WorkspaceHub from "./WorkspaceHub";
+import Dashboard from "./Dashboard";
+import TradeGallery from "./TradeGallery";
+import CalendarView from "./CalendarView";
+import Playbook from "./Playbook";
+import DailyReview from "./DailyReview";
+import Wiki from "./Wiki";
+import TradeForm from "./TradeForm";
+import { usePersistentState } from "./storage";
 import {
   DailyReview as DailyReviewType,
   PlaybookDoc,

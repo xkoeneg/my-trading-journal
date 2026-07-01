@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Percent, TrendingUp, DollarSign, Target, ShieldCheck } from "lucide-react";
-import { Trade } from "../types";
-import { computeWorkspaceStats, formatUSD, formatR } from "../lib/math";
+import { Trade } from "./types";
+import { computeWorkspaceStats, formatUSD, formatR } from "./math";
 import TradeCard from "./TradeCard";
 
 interface DashboardProps {

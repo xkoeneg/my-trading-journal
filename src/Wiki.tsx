@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Plus, Trash2, ImageOff, Upload, X } from "lucide-react";
-import { WikiEntry } from "../types";
-import { fileToCompressedDataUrl } from "../lib/storage";
+import { WikiEntry } from "./types";
+import { fileToCompressedDataUrl } from "./storage";
 import Lightbox from "./Lightbox";
 
 interface WikiProps {

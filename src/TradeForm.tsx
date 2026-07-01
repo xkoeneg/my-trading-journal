@@ -16,9 +16,9 @@ import {
   Session,
   Trade,
   Workspace,
-} from "../types";
-import { computeTradeMath, formatR, formatUSD } from "../lib/math";
-import { fileToCompressedDataUrl } from "../lib/storage";
+} from "./types";
+import { computeTradeMath, formatR, formatUSD } from "./math";
+import { fileToCompressedDataUrl } from "./storage";
 import Lightbox from "./Lightbox";
 
 interface TradeFormProps {

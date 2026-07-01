@@ -1,6 +1,6 @@
 import { ImageOff, ShieldCheck, ShieldAlert } from "lucide-react";
-import { Trade } from "../types";
-import { formatUSD, formatR } from "../lib/math";
+import { Trade } from "./types";
+import { formatUSD, formatR } from "./math";
 
 interface TradeCardProps {
   trade: Trade;
