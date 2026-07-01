@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+html.dark {
+  --color-bg: #0e0e10;
+  --color-surface: #1e1e20;
+  --color-panel: #171719;
+  --color-border: #2e2e32;
+  --color-ink: #e3e3e3;
+  --color-muted: #9a9a9e;
+}
+
+html.light {
+  --color-bg: #f9f9fb;
+  --color-surface: #ffffff;
+  --color-panel: #f1f1f4;
+  --color-border: #e4e4e9;
+  --color-ink: #1f1f1f;
+  --color-muted: #6b6b70;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #0e0e10;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e2e32;
+  border-radius: 8px;
+}
+.light ::-webkit-scrollbar-thumb {
+  background: #e4e4e9;
+}
+
+.blur-sensitive {
+  filter: blur(7px);
+  user-select: none;
+  transition: filter 0.15s ease;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+@layer components {
+  .input {
+    @apply w-full bg-panel border border-border rounded-lg px-3 py-2 text-sm text-ink placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-win/60 focus:border-win/60 transition-colors;
+  }
+  .label {
+    @apply text-xs font-medium text-muted;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
